@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+     h1 Twitter Love-Hate analyzer
+     p#love
+     p#hate
+     p#love_count
+     p#hate_count
+     p#total
+     ul.tweets
+    block content
+    block scripts
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/socket.io/socket.io.js')
+    script(src='/javascripts/client.socket.io.js')
